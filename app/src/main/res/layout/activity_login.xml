@@ -11,6 +11,8 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
         android:elegantTextHeight="false"
         android:gravity="center"
         android:text="Login"
@@ -43,6 +45,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
         android:text="Password" />
 
     <EditText
@@ -57,5 +60,17 @@
         android:hint="Password"
         android:inputType="textPassword"
         android:paddingLeft="10dp" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="75dp"
+        android:background="@drawable/border_radius"
+        android:text="LOGIN"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
 
 </android.widget.LinearLayout>
