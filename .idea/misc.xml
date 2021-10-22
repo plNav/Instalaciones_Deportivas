@@ -3,12 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/alvar/Proyectos/Android Studio/InstalacionesDeportivas/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.19" />
         <entry key="..\:/Users/alvar/Proyectos/Android Studio/InstalacionesDeportivas/app/src/main/res/drawable/border_radius.xml" value="0.2203125" />
         <entry key="..\:/Users/alvar/Proyectos/Android Studio/InstalacionesDeportivas/app/src/main/res/drawable/border_radius_bottom_left.xml" value="0.2203125" />
         <entry key="..\:/Users/alvar/Proyectos/Android Studio/InstalacionesDeportivas/app/src/main/res/drawable/border_radius_bottom_right.xml" value="0.2203125" />
         <entry key="..\:/Users/alvar/Proyectos/Android Studio/InstalacionesDeportivas/app/src/main/res/drawable/border_radius_left.xml" value="0.2203125" />
         <entry key="..\:/Users/alvar/Proyectos/Android Studio/InstalacionesDeportivas/app/src/main/res/drawable/border_radius_top_right.xml" value="0.2203125" />
-        <entry key="..\:/Users/alvar/Proyectos/Android Studio/InstalacionesDeportivas/app/src/main/res/layout/activity_login.xml" value="0.33" />
+        <entry key="..\:/Users/alvar/Proyectos/Android Studio/InstalacionesDeportivas/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2169230769230769" />
+        <entry key="..\:/Users/alvar/Proyectos/Android Studio/InstalacionesDeportivas/app/src/main/res/drawable/underline.xml" value="0.2203125" />
+        <entry key="..\:/Users/alvar/Proyectos/Android Studio/InstalacionesDeportivas/app/src/main/res/layout/activity_login.xml" value="0.22" />
       </map>
     </option>
   </component>
