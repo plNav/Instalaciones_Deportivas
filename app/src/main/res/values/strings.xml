@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Instalaciones Deportivas</string>
+    <string name="login_txt">Login</string>
+    <string name="email_txt">Email</string>
+    <string name="password_txt">Password</string>
+    <string name="autologin_txt">Auto login</string>
+    <string name="create_new_account_txt">Create new account</string>
+    <string name="forgot_password_txt">Forgot password?</string>
 </resources>

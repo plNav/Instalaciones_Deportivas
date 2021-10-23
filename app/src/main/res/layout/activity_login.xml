@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#79FCC1"
     android:orientation="vertical"
     tools:context=".LoginActivity">
 
@@ -15,17 +16,18 @@
         android:layout_marginBottom="50dp"
         android:elegantTextHeight="false"
         android:gravity="center"
-        android:text="Login"
+        android:text="@string/login_txt"
         android:textColor="#000000"
-        android:textSize="40dp"
+        android:textSize="40sp"
         android:textStyle="bold" />
 
     <TextView
         android:id="@+id/txtEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:text="Email" />
+        android:layout_marginStart="30dp"
+        android:text="@string/email_txt"
+        android:textColor="#000000" />
 
     <EditText
         android:id="@+id/inputEmail"
@@ -33,20 +35,24 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
-        android:drawableLeft="@android:drawable/sym_action_email"
+        android:drawableStart="@android:drawable/sym_action_email"
         android:drawablePadding="10dp"
         android:ems="10"
-        android:hint="Email"
+        android:hint="@string/email_txt"
+        android:importantForAutofill="no"
         android:inputType="textEmailAddress"
-        android:paddingLeft="10dp" />
+        android:paddingStart="10dp"
+        android:textColor="#000000"
+        tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
 
     <TextView
         android:id="@+id/txtPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
         android:layout_marginTop="30dp"
-        android:text="Password" />
+        android:text="@string/password_txt"
+        android:textColor="#000000" />
 
     <EditText
         android:id="@+id/inputPassword"
@@ -54,25 +60,38 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
-        android:drawableLeft="@android:drawable/ic_lock_lock"
+        android:drawableStart="@android:drawable/ic_lock_lock"
         android:drawablePadding="10dp"
         android:ems="10"
-        android:hint="Password"
+        android:hint="@string/password_txt"
+        android:importantForAutofill="no"
         android:inputType="textPassword"
-        android:paddingLeft="10dp" />
+        android:paddingStart="10dp"
+        android:textColor="#000000"
+        tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+    <CheckBox
+        android:id="@+id/checkBoxAutoLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:minHeight="48dp"
+        android:text="@string/autologin_txt" />
 
     <Button
         android:id="@+id/btnLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="75dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="35dp"
         android:layout_marginRight="75dp"
         android:layout_marginBottom="50dp"
         android:background="@drawable/border_radius"
-        android:text="LOGIN"
+        android:text="@string/login_txt"
         android:textColor="#FFFFFF"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -86,12 +105,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/underline"
-            android:text="Create new account"
+            android:text="@string/create_new_account_txt"
             android:textColor="@color/blue"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            tools:ignore="TextContrastCheck" />
 
         <Space
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1" />
 
@@ -101,9 +121,10 @@
             android:layout_height="wrap_content"
             android:background="@drawable/underline"
             android:gravity="right"
-            android:text="Forgot password?"
+            android:text="@string/forgot_password_txt"
             android:textColor="@color/blue"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            tools:ignore="TextContrastCheck" />
     </LinearLayout>
 
 </android.widget.LinearLayout>
