@@ -1,12 +1,7 @@
 package martinez.alvaro.instalacionesdeportivas
 
-import android.graphics.Color
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.provider.CalendarContract
-import android.view.View
-import android.widget.EditText
-import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity : AppCompatActivity() {
@@ -21,30 +16,35 @@ class LoginActivity : AppCompatActivity() {
 
     private fun login(email:String?, password:String?) {
         // TODO
-        /* EMAIL FORMAT VALIDATION */
-        if(!isValidEmail(email)) {
-            txtEmailError.visibility = View.VISIBLE
-            return
-        }
-        else txtEmailError.visibility = View.GONE
 
         /* CHECK IF USER IS REGISTERED ON DATABASE */
+
         // IF NOT
+          //
             // ASK USER IF WANT TO REGISTER
             // IF YES GO TO REGISTER PAGE
             // ELSE DONT DO ANYTHING
-        // ELSE GO TO MAIN LAYOUT
+          //
+        // ELSE
+          //
+            // LOAD MAIN LAYOUT
+          //
 
+        /* CHECK IF USER IS REGISTERED ON DATABASE */
     }
 
     private fun createAccount(){
         // TODO
+
+        /* LOAD CREATE ACCOUNT LAYOUT */
+
+            // private fun isValidEmail(email:String?):Boolean = !(email === null) && android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()
+
+        /* LOAD CREATE ACCOUNT LAYOUT */
     }
 
     private fun restorePassword() {
         // TODO
     }
-
-    private fun isValidEmail(email:String?):Boolean = !(email === null) && android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()
 
 }
