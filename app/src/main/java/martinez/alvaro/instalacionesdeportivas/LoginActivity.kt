@@ -1,21 +1,27 @@
 package martinez.alvaro.instalacionesdeportivas
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import kotlinx.android.synthetic.main.activity_login.*
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+import martinez.alvaro.instalacionesdeportivas.databinding.ActivityLoginBinding
 
 class LoginActivity : AppCompatActivity() {
 
+    private lateinit var binding:ActivityLoginBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_login)
-        btnLogin.setOnClickListener { login(inputEmail.editableText.toString(), inputPassword.editableText.toString()) }
-        txtCreateAccount.setOnClickListener { createAccount() }
-        txtForgotPassword.setOnClickListener { restorePassword() }
+        binding = ActivityLoginBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        binding.btnLogin.setOnClickListener { login(binding.inputEmail.text.toString(), binding.inputPassword.text.toString()) }
+        binding.txtCreateAccount.setOnClickListener { createAccount() }
+        binding.txtForgotPassword.setOnClickListener { restorePassword() }
     }
 
     private fun login(email:String?, password:String?) {
         // TODO
+
+        Toast.makeText(applicationContext, "Email: $email, Password: $password", Toast.LENGTH_SHORT).show()
 
         /* CHECK IF USER IS REGISTERED ON DATABASE */
 
