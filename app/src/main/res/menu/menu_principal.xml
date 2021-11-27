@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/btnMore"
+        android:icon="@mipmap/icono_menu"
+        android:title="Más"
+        app:showAsAction="always">
+        <menu>
+            <item android:title="Profile"
+                android:id="@+id/btnProfile"
+                android:icon="@mipmap/icono_usuario"/>
+            <item
+                android:id="@+id/btnRanking"
+                android:icon="@mipmap/icono_ranking"
+                android:title="Ranking" />
+            <item
+                android:id="@+id/btnPlay"
+                android:icon="@mipmap/icono_jugar"
+                android:title="Play" />
+            <item
+                android:id="@+id/btnLogout"
+                android:icon="@mipmap/icono_cerrarsesion"
+                android:title="Log out" />
+            <item
+                android:id="@+id/btnFriends"
+                android:icon="@mipmap/icono_amigos"
+                android:title="Friends" />
+        </menu>
+    </item>
+</menu>
