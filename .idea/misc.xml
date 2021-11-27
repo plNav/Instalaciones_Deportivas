@@ -3,17 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Proyectos/Android Studio/Instalaciones_Deportivas/app/src/main/res/drawable/border_radius.xml" value="0.22135416666666666" />
-        <entry key="..\:/Proyectos/Android Studio/Instalaciones_Deportivas/app/src/main/res/layout/activity_login.xml" value="0.33" />
-        <entry key="..\:/Users/alvar/Proyectos/Android Studio/InstalacionesDeportivas/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.19" />
-        <entry key="..\:/Users/alvar/Proyectos/Android Studio/InstalacionesDeportivas/app/src/main/res/drawable/border_radius.xml" value="0.2203125" />
-        <entry key="..\:/Users/alvar/Proyectos/Android Studio/InstalacionesDeportivas/app/src/main/res/drawable/border_radius_bottom_left.xml" value="0.2203125" />
-        <entry key="..\:/Users/alvar/Proyectos/Android Studio/InstalacionesDeportivas/app/src/main/res/drawable/border_radius_bottom_right.xml" value="0.2203125" />
-        <entry key="..\:/Users/alvar/Proyectos/Android Studio/InstalacionesDeportivas/app/src/main/res/drawable/border_radius_left.xml" value="0.2203125" />
-        <entry key="..\:/Users/alvar/Proyectos/Android Studio/InstalacionesDeportivas/app/src/main/res/drawable/border_radius_top_right.xml" value="0.2203125" />
-        <entry key="..\:/Users/alvar/Proyectos/Android Studio/InstalacionesDeportivas/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2169230769230769" />
-        <entry key="..\:/Users/alvar/Proyectos/Android Studio/InstalacionesDeportivas/app/src/main/res/drawable/underline.xml" value="0.2203125" />
-        <entry key="..\:/Users/alvar/Proyectos/Android Studio/InstalacionesDeportivas/app/src/main/res/layout/activity_login.xml" value="0.22" />
+        <entry key="..\:/Users/alvar/Proyectos/Android Studio/InstalacionesDeportivas/app/src/main/res/drawable/border_radius.xml" value="0.19166666666666668" />
+        <entry key="..\:/Users/alvar/Proyectos/Android Studio/InstalacionesDeportivas/app/src/main/res/drawable/border_radius_sinfondo.xml" value="0.19166666666666668" />
+        <entry key="..\:/Users/alvar/Proyectos/Android Studio/InstalacionesDeportivas/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/alvar/Proyectos/Android Studio/InstalacionesDeportivas/app/src/main/res/layout/activity_profile.xml" value="0.22" />
+        <entry key="..\:/Users/alvar/Proyectos/Android Studio/InstalacionesDeportivas/app/src/main/res/layout/activity_ranking.xml" value="0.39323220536756126" />
+        <entry key="..\:/Users/alvar/Proyectos/Android Studio/InstalacionesDeportivas/app/src/main/res/layout/activity_signin.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/alvar/Proyectos/Android Studio/InstalacionesDeportivas/app/src/main/res/layout/activity_signup.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/alvar/Proyectos/Android Studio/InstalacionesDeportivas/app/src/main/res/layout/recycler_jugador_ranking.xml" value="0.4466666666666667" />
+        <entry key="..\:/Users/alvar/Proyectos/Android Studio/InstalacionesDeportivas/app/src/main/res/layout/spinner_item_putuacion.xml" value="0.1" />
+        <entry key="..\:/Users/alvar/Proyectos/Android Studio/InstalacionesDeportivas/app/src/main/res/menu/menu_principal.xml" value="0.3333333333333333" />
       </map>
     </option>
   </component>

@@ -1,9 +1,17 @@
 <resources>
     <string name="app_name">Instalaciones Deportivas</string>
-    <string name="login_txt">Login</string>
+    <string name="sign_up_txt">Sign Up</string>
+    <string name="sign_in_txt">Sign In</string>
     <string name="email_txt">Email</string>
     <string name="password_txt">Password</string>
+    <string name="password_repeat_txt">Repeat Password</string>
     <string name="autologin_txt">Auto login</string>
     <string name="create_new_account_txt">Create new account</string>
     <string name="forgot_password_txt">Forgot password?</string>
+    <string name="full_name_txt">Name</string>
+    <string name="save_txt">Save</string>
+    <string name="data_ej_txt">Ej: 666 66 66 66</string>
+    <string name="date_ej_txt">Ej: 02/02/2002</string>
+    <string name="date_txt">Fecha nacimiento</string>
+    <string name="phone_txt">Phone</string>
 </resources>
