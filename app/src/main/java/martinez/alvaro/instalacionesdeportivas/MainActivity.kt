@@ -37,8 +37,22 @@ class MainActivity : AppCompatActivity() {
             R.id.btnLogout -> logout()
             R.id.btnProfile -> profile()
             R.id.btnRanking -> ranking()
+            R.id.btnPlay -> play()
+            R.id.btnFriends -> friends()
             else -> super.onOptionsItemSelected(item)
         }
+    }
+
+    private fun friends(): Boolean {
+        val intent = Intent(this, FriendsActivity::class.java)
+        this.startActivity(intent)
+        return true
+    }
+
+    private fun play(): Boolean {
+        val intent = Intent(this, PlayActivity::class.java)
+        this.startActivity(intent)
+        return true
     }
 
     private fun ranking(): Boolean {

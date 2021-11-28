@@ -20,6 +20,7 @@ class SignupActivity : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
     private lateinit var database: FirebaseFirestore
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
@@ -71,7 +72,9 @@ class SignupActivity : AppCompatActivity() {
                     "image" to "gs://instalaciones-deportivas-ddb39.appspot.com/user.png",
                     "date" to "",
                     "phone" to "",
-                    "puntuacion" to binding.spinnerPuntuacion.selectedItem.toString()
+                    "puntuacion" to binding.spinnerPuntuacion.selectedItem.toString(),
+                    "peticiones" to listOf<String>(),
+                    "amigos" to listOf<String>()
                 )
                 database.collection("users").add(user).addOnSuccessListener {
                     Toast.makeText(applicationContext, "User registered.", Toast.LENGTH_SHORT).show()

@@ -26,7 +26,7 @@ class ProfileActivity : AppCompatActivity() {
     private lateinit var database: FirebaseFirestore
     private lateinit var auth: FirebaseAuth
     private lateinit var storage: FirebaseStorage
-    private lateinit var path: Uri
+    private var path: Uri? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -49,6 +49,8 @@ class ProfileActivity : AppCompatActivity() {
                 database.collection("users").whereEqualTo("email", auth.currentUser?.email)
                 .get().addOnCompleteListener { task ->
 
+                    Log.d("GETTED", true.toString())
+
                     val id = task.result?.documents?.get(0)?.id
                     val user = hashMapOf(
                         "email" to binding.inputEmailProfile.text.toString(),
@@ -59,9 +61,9 @@ class ProfileActivity : AppCompatActivity() {
 
                     if(path != null) {
                         val storageRef = storage.reference
-                        val imageRef = storageRef.child("imagenes_usuarios/${path.lastPathSegment}")
-                        val img = storage.getReferenceFromUrl(storageRef.child("imagenes_usuarios/${path.lastPathSegment}").toString())
-                        imageRef.putFile(path).addOnSuccessListener {
+                        val imageRef = storageRef.child("imagenes_usuarios/${path?.lastPathSegment}")
+                        val img = storage.getReferenceFromUrl(storageRef.child("imagenes_usuarios/${path?.lastPathSegment}").toString())
+                        imageRef.putFile(path!!).addOnSuccessListener {
                             Toast.makeText(applicationContext, "Imagen subida", Toast.LENGTH_SHORT).show()
                         }.addOnFailureListener {
                             Toast.makeText(applicationContext, "Imagen no subida", Toast.LENGTH_SHORT).show()
@@ -70,7 +72,7 @@ class ProfileActivity : AppCompatActivity() {
                     }
 
                     val document = database.collection("users").document(id?: "")
-                    user.forEach { data -> document.update(data.key, data.value.toString()) }
+                    user.forEach { data -> document.update(data.key, data.value) }
                     Toast.makeText(applicationContext, "Datos guardados correctamente", Toast.LENGTH_SHORT).show()
                 }
             }else Toast.makeText(applicationContext, "Algun campo no es correcto", Toast.LENGTH_SHORT).show()
