@@ -49,7 +49,7 @@ class PlayActivity : AppCompatActivity() {
                     }.addOnCompleteListener {
                         cont++
                         if(cont == jugadores.size) {
-                            if(listaJugadores.size < 4){
+                            if(listaJugadores.size <= 4){
                                 storage.reference.child("icono_agregar.png").downloadUrl.addOnSuccessListener { uri2 ->
                                     for(i in 0..(4 - listaJugadores.size)) listaJugadores.add(Jugador(email = "", uri = uri2))
                                 }.addOnCompleteListener {
