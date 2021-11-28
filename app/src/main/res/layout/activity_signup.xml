@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#79FCC1"
+    android:background="#FFFFFF"
     android:orientation="vertical"
     android:padding="10dp"
     tools:context=".SignupActivity">
@@ -16,13 +16,13 @@
         android:layout_marginTop="30dp"
         android:layout_marginBottom="30dp"
         android:elegantTextHeight="false"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
         android:gravity="center"
         android:text="@string/sign_up_txt"
         android:textColor="#000000"
         android:textSize="40sp"
-        android:textStyle="bold"
-        android:focusable="true"
-        android:focusableInTouchMode="true"/>
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/txtEmailError"
@@ -32,7 +32,7 @@
         android:layout_marginRight="30dp"
         android:enabled="false"
         android:textColor="#FF0000"
-        android:visibility="gone"/>
+        android:visibility="gone" />
 
     <EditText
         android:id="@+id/inputEmailSignUp"
@@ -43,14 +43,14 @@
         android:drawableStart="@android:drawable/sym_action_email"
         android:drawablePadding="10dp"
         android:ems="10"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
         android:hint="@string/email_txt"
         android:importantForAutofill="no"
         android:inputType="textEmailAddress"
         android:paddingStart="10dp"
         android:textColor="#000000"
-        tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck"
-        android:focusable="true"
-        android:focusableInTouchMode="true"/>
+        tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
 
     <TextView
         android:id="@+id/txtPasswordError"
@@ -60,7 +60,7 @@
         android:layout_marginRight="30dp"
         android:enabled="false"
         android:textColor="#FF0000"
-        android:visibility="gone"/>
+        android:visibility="gone" />
 
     <EditText
         android:id="@+id/inputPasswordSignUp"
@@ -71,14 +71,14 @@
         android:drawableStart="@android:drawable/ic_lock_lock"
         android:drawablePadding="10dp"
         android:ems="10"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
         android:hint="@string/password_txt"
         android:importantForAutofill="no"
         android:inputType="textPassword"
         android:paddingStart="10dp"
         android:textColor="#000000"
-        tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck"
-        android:focusable="true"
-        android:focusableInTouchMode="true"/>
+        tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
 
     <EditText
         android:id="@+id/inputPasswordRepeatSignUp"
@@ -89,14 +89,14 @@
         android:drawableStart="@android:drawable/ic_lock_lock"
         android:drawablePadding="10dp"
         android:ems="10"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
         android:hint="Repeat Password"
         android:importantForAutofill="no"
         android:inputType="textPassword"
         android:paddingStart="10dp"
         android:textColor="#000000"
-        tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck"
-        android:focusable="true"
-        android:focusableInTouchMode="true"/>
+        tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
 
     <TextView
         android:id="@+id/txtNameError"
@@ -106,7 +106,7 @@
         android:layout_marginRight="30dp"
         android:enabled="false"
         android:textColor="#FF0000"
-        android:visibility="gone"/>
+        android:visibility="gone" />
 
     <EditText
         android:id="@+id/inputNameSignUp"
@@ -115,12 +115,12 @@
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
         android:ems="10"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
         android:hint="@string/full_name_txt"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        android:paddingStart="10dp"
-        android:focusable="true"
-        android:focusableInTouchMode="true"/>
+        android:paddingStart="10dp" />
 
     <TextView
         android:id="@+id/txtPuntuacion"
